@@ -1,0 +1,30 @@
+.check-flex {
+  gap: 1rem;
+}
+
+@media screen and (max-width: 830px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+
+  .box-element {
+    border-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .products {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .products img {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-fluid {
+    padding: 0 !important;
+  }
+}

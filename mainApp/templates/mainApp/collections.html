@@ -1,0 +1,210 @@
+{% extends 'mainApp/main.html' %} {% load static %} {% block page_title %}
+{{cat_name}} {% endblock %} {% block css %}
+<link
+  rel="stylesheet"
+  href="{% static 'css/collections1.css' %}"
+  type="text/css"
+  media="screen"
+/>
+{% endblock %} {% block content %}
+<section class="filter-and-products">
+  <div class="container-fluid d-flex gap-3 collections_cont">
+    <!-- this is for responsive -->
+    <nav
+      class="navbar bg-body-tertiary fixed-top filters-db"
+      style="background: none !important"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+          style="background-color: #fff !important"
+        >
+          <span class="text-dark">Filters</span>
+          <span class="navbar-toggler-icon text-dark"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Filters</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              {% for attribute, values in rec_data %}
+              <div>
+                <button
+                  class="btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample{{attribute}}"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  {{ attribute }} <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                {% for value in values %}
+                <div
+                  class="collapse show filter-products-values"
+                  id="collapseExample{{attribute}}"
+                  data-filter="{{attribute}}"
+                  data-value="{{value}}"
+                >
+                  <div
+                    class="card card-body mb-1 values-filter border-0"
+                    style="cursor: pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      class="btn-check"
+                      id="btn-check-{{value}}"
+                      autocomplete="off"
+                    />
+                    <span class="d-none check">btn-check-{{value}}</span>
+                    <label
+                      class="btn btn-primary filter-value-sty"
+                      for="btn-check"
+                      >{{value}}</label
+                    >
+                  </div>
+                </div>
+
+                {% endfor %}
+              </div>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="filters border border-black p-3 filters-dn">
+      <h3>Filters</h3>
+
+      {% for attribute, values in rec_data %}
+      <div>
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample{{attribute}}"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          {{ attribute }} <i class="fa-solid fa-angle-down"></i>
+        </button>
+
+        {% for value in values %}
+        <div
+          class="collapse show filter-products-values"
+          id="collapseExample{{attribute}}"
+          data-filter="{{attribute}}"
+          data-value="{{value}}"
+        >
+          <div
+            class="card card-body mb-1 values-filter border-0"
+            style="cursor: pointer"
+          >
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btn-check-{{value}}"
+              autocomplete="off"
+            />
+            <span class="d-none check">btn-check-{{value}}</span>
+            <label class="btn btn-primary filter-value-sty" for="btn-check"
+              >{{value}}</label
+            >
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="products">
+      <div
+        class="d-flex border border-black border-bottom-0 p-4 justify-content-between detail-prod"
+        style="border-radius: 5px 5px 0 0"
+      >
+        <span class="fs-3 category_slug">{{cat_name}}</span>
+        <div class="btn-group" style="display: block !important">
+          <button
+            class="btn btn-secondary dropdown-toggle menu-icon-dropdown d-flex align-items-center bg-body text-dark gap-2 py-2"
+            type="button"
+            data-bs-toggle="dropdown"
+            data-bs-auto-close="outside"
+            aria-expanded="false"
+            style="border: none !important"
+          >
+            Sort:
+            <span class="menu_span_for_sort"
+              >Price, low to high <i class="fa-solid fa-angle-down"></i
+            ></span>
+          </button>
+          <ul
+            class="dropdown-menu menu-icon-dropdown1 rounded-0 border-0"
+            style="max-width: 150px"
+          >
+            <button
+              style="
+                font-size: 0.9rem;
+                width: 100%;
+                background: none;
+                border: none;
+                margin-bottom: 0.5rem;
+              "
+              class="high_to_low same"
+            >
+              Price, high to low
+            </button>
+
+            <button
+              style="
+                font-size: 0.9rem;
+                width: 100%;
+                background: none;
+                border: none;
+              "
+              class="low_to_high same"
+            >
+              Price, low to high
+            </button>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="product-list row"
+        id="product-list"
+        style="
+          display: grid;
+          grid-template-columns: auto auto auto;
+          width: 100%;
+          margin-left: 0;
+        "
+      ></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+{% block scripts %}
+<script src="{% static 'js/collections.js' %}"></script>
+{% endblock scripts %} {% endblock %}

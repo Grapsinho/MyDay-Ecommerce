@@ -1,0 +1,109 @@
+{% extends 'mainApp/main.html' %} {% load static %} {% block page_title %} My
+Day {% endblock %} {% block content %}
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+/>
+
+{% if product %}
+<section class="products mb-5" style="position: relative">
+  <div
+    class="detail d-flex border border-black border-bottom-0 p-4 justify-content-between"
+    style="border-radius: 5px 5px 0 0"
+  >
+    <span class="fs-3">
+      Search results for: "<span class="q_for_search">{{q}}</span>"
+    </span>
+    <div class="btn-group" style="display: block !important">
+      <button
+        class="btn btn-secondary dropdown-toggle menu-icon-dropdown d-flex align-items-center bg-body text-dark gap-2 py-2"
+        type="button"
+        data-bs-toggle="dropdown"
+        data-bs-auto-close="outside"
+        aria-expanded="false"
+        style="border: none !important"
+      >
+        Sort:
+        <span class="menu_span_for_sort"
+          >Price, low to high <i class="fa-solid fa-angle-down"></i
+        ></span>
+      </button>
+      <ul
+        class="dropdown-menu menu-icon-dropdown1 rounded-0 border-0"
+        style="max-width: 150px"
+      >
+        <button
+          style="
+            font-size: 0.9rem;
+            width: 100%;
+            background: none;
+            border: none;
+            margin-bottom: 0.5rem;
+          "
+          class="high_to_low same"
+        >
+          Price, high to low
+        </button>
+
+        <button
+          style="font-size: 0.9rem; width: 100%; background: none; border: none"
+          class="low_to_high same"
+        >
+          Price, low to high
+        </button>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="row"
+    id="product-list"
+    style="
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      width: 100%;
+      margin-left: 0;
+    "
+  ></div>
+</section>
+{% else %}
+<span></span>
+{% endif %}
+<section class="categories">
+  <div class="container-fluid">
+    {% load mptt_tags %}
+    <ul class="root">
+      {% recursetree cat %}
+      <li class="fs-4 mb-5" style="list-style: none">
+        {{ node }}: {% if not node.is_leaf_node %}
+        <ul
+          class="owl-carousel owl-loaded owl-drag mt-4"
+          id="owl-carousel-{{ node.id }}"
+        >
+          {% for child in node.get_children %} {% if child.is_active %}
+          <a
+            href="{% url 'collections' child.slug %}"
+            style="text-decoration: none"
+          >
+            <ul class="children fs-5 item child-items">
+              <span style="margin-left: -1.4rem">{{ child }}</span>
+            </ul>
+          </a>
+          {% endif %} {% endfor %}
+        </ul>
+      </li>
+      {% endif %} {% endrecursetree %}
+    </ul>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+{% block scripts %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock scripts %} {% endblock %}

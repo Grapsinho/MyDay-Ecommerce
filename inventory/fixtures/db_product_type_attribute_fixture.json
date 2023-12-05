@@ -1,0 +1,42 @@
+[
+  {
+    "model": "inventory.producttypeattribute",
+    "pk": 1,
+    "fields": { "product_attribute": 1, "product_type": 1 }
+  },
+  {
+    "model": "inventory.producttypeattribute",
+    "pk": 2,
+    "fields": { "product_attribute": 1, "product_type": 2 }
+  },
+  {
+    "model": "inventory.producttypeattribute",
+    "pk": 3,
+    "fields": { "product_attribute": 1, "product_type": 3 }
+  },
+  {
+    "model": "inventory.producttypeattribute",
+    "pk": 4,
+    "fields": { "product_attribute": 2, "product_type": 4 }
+  },
+  {
+    "model": "inventory.producttypeattribute",
+    "pk": 5,
+    "fields": { "product_attribute": 2, "product_type": 5 }
+  },
+  {
+    "model": "inventory.producttypeattribute",
+    "pk": 6,
+    "fields": { "product_attribute": 3, "product_type": 4 }
+  },
+  {
+    "model": "inventory.producttypeattribute",
+    "pk": 7,
+    "fields": { "product_attribute": 3, "product_type": 3 }
+  },
+  {
+    "model": "inventory.producttypeattribute",
+    "pk": 8,
+    "fields": { "product_attribute": 3, "product_type": 5 }
+  }
+]

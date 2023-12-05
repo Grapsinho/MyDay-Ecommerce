@@ -1,0 +1,72 @@
+[
+  {
+    "model": "inventory.category",
+    "pk": 1,
+    "fields": {
+      "name": "T-Shirts",
+      "slug": "t-shirts",
+      "is_active": true,
+      "parent": null,
+      "lft": 1,
+      "rght": 2,
+      "tree_id": 1,
+      "level": 0
+    }
+  },
+  {
+    "model": "inventory.category",
+    "pk": 2,
+    "fields": {
+      "name": "Jeans",
+      "slug": "jeans",
+      "is_active": true,
+      "parent": null,
+      "lft": 3,
+      "rght": 4,
+      "tree_id": 1,
+      "level": 0
+    }
+  },
+  {
+    "model": "inventory.category",
+    "pk": 3,
+    "fields": {
+      "name": "Dresses",
+      "slug": "dresses",
+      "is_active": true,
+      "parent": null,
+      "lft": 5,
+      "rght": 6,
+      "tree_id": 1,
+      "level": 0
+    }
+  },
+  {
+    "model": "inventory.category",
+    "pk": 4,
+    "fields": {
+      "name": "Sweaters",
+      "slug": "sweaters",
+      "is_active": true,
+      "parent": null,
+      "lft": 7,
+      "rght": 8,
+      "tree_id": 1,
+      "level": 0
+    }
+  },
+  {
+    "model": "inventory.category",
+    "pk": 5,
+    "fields": {
+      "name": "Jackets",
+      "slug": "jackets",
+      "is_active": true,
+      "parent": null,
+      "lft": 9,
+      "rght": 10,
+      "tree_id": 1,
+      "level": 0
+    }
+  }
+]

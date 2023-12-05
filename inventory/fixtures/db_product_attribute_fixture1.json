@@ -1,0 +1,17 @@
+[
+  {
+    "model": "inventory.productattribute",
+    "pk": 1,
+    "fields": { "name": "Color", "description": "Product color" }
+  },
+  {
+    "model": "inventory.productattribute",
+    "pk": 2,
+    "fields": { "name": "Size", "description": "Product size" }
+  },
+  {
+    "model": "inventory.productattribute",
+    "pk": 3,
+    "fields": { "name": "Material", "description": "Product material" }
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "model": "inventory.brand",
+    "pk": 1,
+    "fields": { "name": "Fashion House" }
+  },
+  { "model": "inventory.brand", "pk": 2, "fields": { "name": "Chic Styles" } },
+  { "model": "inventory.brand", "pk": 3, "fields": { "name": "Urban Trend" } },
+  { "model": "inventory.brand", "pk": 4, "fields": { "name": "Elegance Inc" } },
+  { "model": "inventory.brand", "pk": 5, "fields": { "name": "Cozy Comfort" } }
+]

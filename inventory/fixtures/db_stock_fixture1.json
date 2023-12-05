@@ -1,0 +1,452 @@
+[
+  {
+    "model": "inventory.stock",
+    "pk": 1,
+    "fields": {
+      "product_inventory": 1,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 2,
+    "fields": {
+      "product_inventory": 2,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 3,
+    "fields": {
+      "product_inventory": 3,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 4,
+    "fields": {
+      "product_inventory": 4,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 5,
+    "fields": {
+      "product_inventory": 5,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 6,
+    "fields": {
+      "product_inventory": 6,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 7,
+    "fields": {
+      "product_inventory": 7,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 8,
+    "fields": {
+      "product_inventory": 8,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 9,
+    "fields": {
+      "product_inventory": 9,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 10,
+    "fields": {
+      "product_inventory": 10,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 11,
+    "fields": {
+      "product_inventory": 11,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 12,
+    "fields": {
+      "product_inventory": 12,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 13,
+    "fields": {
+      "product_inventory": 13,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 14,
+    "fields": {
+      "product_inventory": 14,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 15,
+    "fields": {
+      "product_inventory": 15,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 16,
+    "fields": {
+      "product_inventory": 16,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 17,
+    "fields": {
+      "product_inventory": 17,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 18,
+    "fields": {
+      "product_inventory": 18,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 19,
+    "fields": {
+      "product_inventory": 19,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 20,
+    "fields": {
+      "product_inventory": 20,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 21,
+    "fields": {
+      "product_inventory": 21,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 22,
+    "fields": {
+      "product_inventory": 22,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 23,
+    "fields": {
+      "product_inventory": 23,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 24,
+    "fields": {
+      "product_inventory": 24,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 25,
+    "fields": {
+      "product_inventory": 25,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 26,
+    "fields": {
+      "product_inventory": 26,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 27,
+    "fields": {
+      "product_inventory": 27,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 28,
+    "fields": {
+      "product_inventory": 28,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 29,
+    "fields": {
+      "product_inventory": 29,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 30,
+    "fields": {
+      "product_inventory": 30,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 31,
+    "fields": {
+      "product_inventory": 31,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 32,
+    "fields": {
+      "product_inventory": 32,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 33,
+    "fields": {
+      "product_inventory": 33,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 34,
+    "fields": {
+      "product_inventory": 34,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 35,
+    "fields": {
+      "product_inventory": 35,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 36,
+    "fields": {
+      "product_inventory": 36,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 37,
+    "fields": {
+      "product_inventory": 37,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 38,
+    "fields": {
+      "product_inventory": 38,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 39,
+    "fields": {
+      "product_inventory": 39,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 40,
+    "fields": {
+      "product_inventory": 40,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 41,
+    "fields": {
+      "product_inventory": 41,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 42,
+    "fields": {
+      "product_inventory": 42,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 43,
+    "fields": {
+      "product_inventory": 43,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 44,
+    "fields": {
+      "product_inventory": 44,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  },
+  {
+    "model": "inventory.stock",
+    "pk": 45,
+    "fields": {
+      "product_inventory": 45,
+      "last_checked": null,
+      "units": 100,
+      "units_sold": 25
+    }
+  }
+]

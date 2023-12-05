@@ -1,0 +1,30 @@
+[
+  {
+    "model": "inventory.producttype",
+    "pk": 1,
+    "fields": { "name": "T-Shirts", "product_type_attributes": [1, 2, 4] }
+  },
+  {
+    "model": "inventory.producttype",
+    "pk": 2,
+    "fields": { "name": "Jeans", "product_type_attributes": [1, 2, 3, 4] }
+  },
+  {
+    "model": "inventory.producttype",
+    "pk": 3,
+    "fields": { "name": "Dresses", "product_type_attributes": [1, 4, 7] }
+  },
+  {
+    "model": "inventory.producttype",
+    "pk": 4,
+    "fields": {
+      "name": "Sweaters",
+      "product_type_attributes": [1, 2, 4, 6]
+    }
+  },
+  {
+    "model": "inventory.producttype",
+    "pk": 5,
+    "fields": { "name": "Jackets", "product_type_attributes": [1, 4, 5, 8] }
+  }
+]

@@ -1,0 +1,129 @@
+{% extends 'mainApp/main.html' %} {% load static %} {% block page_title %} Cart
+{% endblock %} {% block css %}
+<link
+  rel="stylesheet"
+  href="{% static 'css/cart.css' %}"
+  type="text/css"
+  media="screen"
+/>
+{% endblock %} {% block content %}
+
+<div class="card" style="border: 0; background: none; box-shadow: none">
+  <div class="row wrapper">
+    <div class="col-md-8 cart321">
+      <div class="title">
+        <div class="row">
+          <div class="col">
+            <h4><b>Shopping Cart</b></h4>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex gap-3" style="flex-direction: column">
+        {% for i in cart_products %}
+        <div
+          class="row border-top border-bottom gap-3 item-length"
+          name="product-{{i.sku}}"
+        >
+          <div class="row main align-items-center">
+            <div class="d-flex sml-wrapper" style="width: 50%">
+              <div style="width: 85px">
+                <img
+                  class="img-fluid"
+                  src="/static/images/{{i.img_url}}"
+                  alt="Product"
+                />
+              </div>
+              <div class="col d-flex gap-5 align-items-center">
+                <div class="row">{{i.name}}</div>
+
+                <div
+                  class="color-for-attr d-flex justify-content-center align-items-center text-light"
+                  style="width: 50px; height: 50px"
+                  data-color="{{i.color}}"
+                >
+                  {{i.sizes}}
+                </div>
+              </div>
+            </div>
+            <div
+              class="col d-flex align-items-center gap-2 sml-wrapper2"
+              style="width: 50%"
+            >
+              <div class="content counter">
+                <span
+                  class="qt-minus btn123"
+                  data-sku="{{i.sku}}"
+                  style="cursor: pointer"
+                  >-</span
+                >
+                <input
+                  type="number"
+                  value="{{i.quantity}}"
+                  min="1"
+                  max="{{i.stock}}"
+                  step="1"
+                  name="quantity"
+                  class="input-quan qt"
+                />
+                <span
+                  class="qt-plus btn123"
+                  data-sku="{{i.sku}}"
+                  style="cursor: pointer"
+                  >+</span
+                >
+              </div>
+
+              <span class="full-price">{{i.fullPrice}}<span>$</span></span>
+              <span class="price d-none">{{i.price}}</span>
+              <span class="item-sku d-none">{{i.sku}}</span>
+              <span
+                class="close remove-item"
+                name="{{i.sku}}"
+                style="cursor: pointer"
+                >&#10005;</span
+              >
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-md-4 summary">
+      <div>
+        <h5><b>Summary</b></h5>
+      </div>
+      <hr />
+
+      <div class="row right checkout clearfix">
+        <h4 class="subtotal text-right">Subtotal: <span>163.96</span>$</h4>
+        <h4 class="shipping text-right">Shipping: <span>5.00</span>$</h4>
+      </div>
+      <form class="form412">
+        <p>SHIPPING</p>
+        <select>
+          <option class="text-muted">Standard-Delivery- $5.00</option>
+        </select>
+      </form>
+      <div
+        class="row prices"
+        style="border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 2vh 0"
+      >
+        <div class="col">TOTAL PRICE</div>
+        <h4 class="total text-right">Total: <span>177.16</span>$</h4>
+      </div>
+      <a
+        href="{% url 'checkout' %}"
+        class="btn123"
+        style="display: block; width: 100%; text-align: center"
+        >CHECKOUT</a
+      >
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+{% block scripts %}
+
+<script src="{% static 'js/cart.js' %}"></script>
+{% endblock scripts %} {% endblock %}
