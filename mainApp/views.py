@@ -311,18 +311,18 @@ def filter_products_for_collections(request):
     if sort_option == 'low_to_high':
         
         if filters_dict: 
-            products = ProductInventory.objects.filter(product__category__slug__icontains=product_name, attribute_values__attribute_value__in=filters_dict, is_active=True).order_by('retail_price')
+            products = ProductInventory.objects.filter(product__category__slug__icontains=product_name, attribute_values__attribute_value__in=filters_dict, is_active=True).order_by('retail_price').distinct()
 
         else:
-            products = ProductInventory.objects.filter(product__category__slug__icontains=product_name, is_active=True).order_by('retail_price')
+            products = ProductInventory.objects.filter(product__category__slug__icontains=product_name, is_active=True).order_by('retail_price').distinct()
 
     elif sort_option == 'high_to_low':
         
         if filters_dict: 
-            products = ProductInventory.objects.filter(product__category__slug__icontains=product_name, attribute_values__attribute_value__in=filters_dict, is_active=True).order_by('-retail_price')
+            products = ProductInventory.objects.filter(product__category__slug__icontains=product_name, attribute_values__attribute_value__in=filters_dict, is_active=True).order_by('-retail_price').distinct()
                 
         else:
-            products = ProductInventory.objects.filter(product__category__slug__icontains=product_name, is_active=True).order_by('-retail_price')
+            products = ProductInventory.objects.filter(product__category__slug__icontains=product_name, is_active=True).order_by('-retail_price').distinct()
                 
         
 
