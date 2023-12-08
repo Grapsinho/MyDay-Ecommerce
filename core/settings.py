@@ -1,5 +1,5 @@
 from pathlib import Path
-import dj_database_url
+# import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-k@$fehltpvt(zmf)5q(l*m7u&p!9(!0mn7zhu%a%2i=h1y_-lm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 import pymysql
 pymysql.version_info = (1, 4, 6, 'final', 0)  # (major, minor, micro, releaselevel, serial)
@@ -34,6 +34,10 @@ INSTALLED_APPS = [
     "mainApp.apps.MainappConfig",
     "inventory.apps.InventoryConfig",
 
+    #api
+    "rest_framework",
+    'corsheaders',
+
     # External app
     "mptt",
     "channels",
@@ -44,6 +48,13 @@ INSTALLED_APPS = [
 
 AUTH_USER_MODEL = 'inventory.Costumer'
 
+CORS_ALLOW_ALL_ORIGINS = True
+
+#შემიძლია მივუთითო რომელი ლინკები დაუშვას
+# CORS_ALLOWED_ORIGINS = [
+#     'http://127.0.0.1:5500',  # Your frontend URL
+#     # Add other allowed origins as needed
+# ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,9 +65,17 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
+    #api
+    'corsheaders.middleware.CorsMiddleware',
+
     #debug-toolbar
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
+
+REST_FRAMEWORK = {
+    # და აქ ანუ ნებართვას ვაძლევთ მხოლოდ დარეგისტრირებულ იუზერებს
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticatedOrReadOnly"],
+}
 
 CACHES = {
     'default': {
@@ -96,16 +115,16 @@ ASGI_APPLICATION = 'core.asgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'myday',
-    #     'USER': 'root',
-    #     'PASSWORD': 'chemirutpaswordi',
-    #     'HOST': '127.0.0.1',
-    #     'PORT': 3306
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myday',
+        'USER': 'root',
+        'PASSWORD': 'chemirutpaswordi',
+        'HOST': '127.0.0.1',
+        'PORT': 3306
+    }
 
-    "default": dj_database_url.parse("postgres://mydayecommercedatabase_user:Qb3shtU6ErWIZnuctLKQlAtvBYvt4z77@dpg-clnjrhhll56s73fjbhb0-a.frankfurt-postgres.render.com/mydayecommercedatabase")
+    # "default": dj_database_url.parse("postgres://mydayecommercedatabase_user:Qb3shtU6ErWIZnuctLKQlAtvBYvt4z77@dpg-clnjrhhll56s73fjbhb0-a.frankfurt-postgres.render.com/mydayecommercedatabase")
 }
 
 # DATABASES = {
