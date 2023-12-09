@@ -341,52 +341,54 @@ def filter_products_for_productDtl(request):
 
     l2 = []
 
+    if product_name == "":
+        return JsonResponse({'products': "There is no such a product"})
+    else:
+        if filters: 
 
-    if filters: 
+            filters_dict = json.loads(filters)
 
-        filters_dict = json.loads(filters)
+            for i in filters_dict:  
+                l2.append(i['value'])
 
-        for i in filters_dict:  
-            l2.append(i['value'])
+            if filters_dict: 
+                if len(l2) == 2:
+                    l2.pop(0)  
 
-        if filters_dict: 
-            if len(l2) == 2:
-                l2.pop(0)  
-
-            products = ProductInventory.objects.get(product__name__icontains=product_name, attribute_values__attribute_value__in=l2, is_active=True)
-                        
-        else:
-            products = ProductInventory.objects.get(product__name__icontains=product_name, is_default=True, is_active=True)
+                products = ProductInventory.objects.get(product__name__icontains=product_name, attribute_values__attribute_value__in=l2, is_active=True)
+                            
+            else:
+                products = ProductInventory.objects.get(product__name__icontains=product_name, is_default=True, is_active=True)
 
         
-    l1 = list()
-   
-    for ii in products.attribute_values.all():
-        l1.append(ii.attribute_value)
+        l1 = list()
+    
+        for ii in products.attribute_values.all():
+            l1.append(ii.attribute_value)
 
-    try:
         try:
-            rem = products.media.get(product_inventory = products)
-            img_url = rem.img_url.url if rem.img_url else None 
+            try:
+                rem = products.media.get(product_inventory = products)
+                img_url = rem.img_url.url if rem.img_url else None 
 
-            serialized_products = {'name': products.product.name,'code': products.sku,'desc': products.product.description, 'price': products.retail_price, 'slug': products.product.slug, 'img_url': img_url, 'stock': str(Stock.objects.get(product_inventory=products).units),}
-        except:
-            rem = products.media.filter(product_inventory = products)
-            img_url = '/static/images/No Image.svg'
-            for i in range(len(rem)):
-                if rem[i]:
-                    img_url = rem[i].img_url.url if rem[i].img_url else None 
-                else:
-                    img_url = '/static/images/No Image.svg'
+                serialized_products = {'name': products.product.name,'code': products.sku,'desc': products.product.description, 'price': products.retail_price, 'slug': products.product.slug, 'img_url': img_url, 'stock': str(Stock.objects.get(product_inventory=products).units),}
+            except:
+                rem = products.media.filter(product_inventory = products)
+                img_url = '/static/images/No Image.svg'
+                for i in range(len(rem)):
+                    if rem[i]:
+                        img_url = rem[i].img_url.url if rem[i].img_url else None 
+                    else:
+                        img_url = '/static/images/No Image.svg'
+                    
                 
-            
-            serialized_products = {'name': products.product.name,'code': products.sku,'desc': products.product.description, 'price': products.retail_price, 'slug': products.product.slug, 'img_url': img_url,}
+                serialized_products = {'name': products.product.name,'code': products.sku,'desc': products.product.description, 'price': products.retail_price, 'slug': products.product.slug, 'img_url': img_url,}
 
-    except Media.DoesNotExist:
-        serialized_products = {'name': products.product.name,'code': products.sku,'desc': products.product.description, 'price': products.retail_price, 'slug': products.product.slug,}
-        print('no')
+        except Media.DoesNotExist:
+            serialized_products = {'name': products.product.name,'code': products.sku,'desc': products.product.description, 'price': products.retail_price, 'slug': products.product.slug,}
+            print('no')
 
-    return JsonResponse({'products': serialized_products, "values": l1})
+        return JsonResponse({'products': serialized_products, "values": l1})
 
 def add_to_cart(request):
 
