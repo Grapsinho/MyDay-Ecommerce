@@ -46,3 +46,7 @@
     margin-bottom: 12rem;
   }
 }
+
+.filter-products-values.disableClick {
+  pointer-events: none !important;
+}

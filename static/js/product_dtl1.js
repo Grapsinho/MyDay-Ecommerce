@@ -84,15 +84,39 @@ $(document).ready(function () {
                 "color": "#fff",
                 "border-radius": "5px",
                 "border-color": "#f0ad4e",
+                "cursor": "pointer",
               });
             } else {
-              $(element).css({
-                "background": "#0d6efd",
-                "color": "#fff",
-                "border-radius": "5px",
-                "border-color": "#0d6efd",
-                "pointer-events": "none",
-              });
+              if (element.getAttribute("data-filter2") == "Size") {
+                $(element).css({
+                  "background": "red",
+                  "color": "#fff",
+                  "border-radius": "5px",
+                  "border-color": "red",
+                });
+
+                for (
+                  let index = 0;
+                  index < $(".filter-products-values").length;
+                  index++
+                ) {
+                  const element = $(".filter-products-values")[index];
+
+                  if (element.getAttribute("data-filter") == "Size") {
+                    $(element).addClass("disableClick");
+                  }
+                }
+
+                // $(element).disabled = true;
+              } else {
+                $(element).css({
+                  "background": "#0d6efd",
+                  "color": "#fff",
+                  "border-radius": "5px",
+                  "border-color": "#0d6efd",
+                  "cursor": "pointer",
+                });
+              }
             }
           }
 

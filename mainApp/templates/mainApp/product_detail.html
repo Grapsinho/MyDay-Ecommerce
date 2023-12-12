@@ -2,7 +2,7 @@
 {{produ_name}} {% endblock %} {% block css %}
 <link
   rel="stylesheet"
-  href="{% static 'css/product_dtl.css' %}"
+  href="{% static 'css/product_dtl1.css' %}"
   type="text/css"
   media="screen"
 />
@@ -97,10 +97,7 @@
                 data-filter="{{attribute}}"
                 data-value="{{value}}"
               >
-                <div
-                  class="card card-body mb-1 values-filter border-0 p-0"
-                  style="cursor: pointer"
-                >
+                <div class="card card-body mb-1 values-filter border-0 p-0">
                   <input
                     type="checkbox"
                     class="btn-check"
@@ -179,5 +176,5 @@
 
 {% block scripts %}
 
-<script src="{% static 'js/product_dtl.js' %}"></script>
+<script src="{% static 'js/product_dtl1.js' %}"></script>
 {% endblock scripts %} {% endblock %}
