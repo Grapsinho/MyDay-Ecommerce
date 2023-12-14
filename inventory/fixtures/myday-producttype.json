@@ -1,0 +1,23 @@
+[
+  {
+    "model": "inventory.producttype",
+    "id": 3,
+    "fields": { "name": "Dresses" }
+  },
+  {
+    "model": "inventory.producttype",
+    "id": 5,
+    "fields": { "name": "Jackets" }
+  },
+  { "model": "inventory.producttype", "id": 2, "fields": { "name": "Jeans" } },
+  {
+    "model": "inventory.producttype",
+    "id": 4,
+    "fields": { "name": "Sweaters" }
+  },
+  {
+    "model": "inventory.producttype",
+    "id": 1,
+    "fields": { "name": "T-Shirts" }
+  }
+]

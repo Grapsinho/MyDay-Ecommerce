@@ -1,0 +1,34 @@
+version: "3.12"
+services:
+  myday:
+    build: .
+    volumes:
+      - .:/mydayapp
+    ports:
+      - 8000:8000
+    image: myday:mydayapp
+    container_name: myday_container
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - mysql-db # Make sure the Django app waits for the MySQL service to be ready
+      - redis-server
+
+  mysql-db:
+    image: mysql:8.0 # You can adjust the MySQL version if needed
+    container_name: mysql_container
+    environment:
+      MYSQL_DATABASE: myday # Set your desired database name
+      MYSQL_USER: root # Your MySQL user
+      MYSQL_PASSWORD: chemirutpaswordi # Your MySQL password
+      MYSQL_ROOT_PASSWORD: chemirutpaswordi # Set root password
+    volumes:
+      - mysql_data:/var/lib/mysql # Persist MySQL data to the host machine
+
+  redis-server:
+    image: redis:latest
+    container_name: redis_container
+    ports:
+      - "6379:6379"
+
+volumes:
+  mysql_data:

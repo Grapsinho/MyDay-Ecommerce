@@ -1,212 +1,212 @@
 [
   {
     "model": "inventory.product",
-    "pk": 1,
+    "id": 1,
     "fields": {
       "web_id": "PROD001",
       "slug": "reinger-shirt",
       "name": "Reinger Shirt",
       "description": "A comfortable and stylish casual T-shirt for everyday wear",
-      "category": 1,
-      "is_active": true,
-      "created_at": "2023-10-01T13:20:30+03:00",
-      "updated_at": "2023-10-01T13:20:30+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-01 10:20:30.000000",
+      "updated_at": "2023-10-01 10:20:30.000000",
+      "category_id": 21
     }
   },
   {
     "model": "inventory.product",
-    "pk": 2,
+    "id": 2,
     "fields": {
       "web_id": "PROD002",
       "slug": "casual-essentials-t-shirt",
       "name": "Cool T-Shirt",
       "description": "A basic tee that is essential for any casual wardrobe",
-      "category": 1,
-      "is_active": true,
-      "created_at": "2023-10-02T14:30:45+03:00",
-      "updated_at": "2023-10-02T14:30:45+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-02 11:30:45.000000",
+      "updated_at": "2023-10-02 11:30:45.000000",
+      "category_id": 21
     }
   },
   {
     "model": "inventory.product",
-    "pk": 3,
+    "id": 3,
     "fields": {
       "web_id": "PROD003",
       "slug": "sporty-vibes-t-shirt",
       "name": "Sporty Vibes T-Shirt",
       "description": "A sporty and comfortable T-shirt for an active lifestyle",
-      "category": 1,
-      "is_active": true,
-      "created_at": "2023-10-03T15:40:15+03:00",
-      "updated_at": "2023-10-03T15:40:15+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-03 12:40:15.000000",
+      "updated_at": "2023-10-03 12:40:15.000000",
+      "category_id": 21
     }
   },
   {
     "model": "inventory.product",
-    "pk": 4,
+    "id": 4,
     "fields": {
       "web_id": "PROD004",
       "slug": "classic-blue-jeans",
       "name": "Classic Blue Jeans",
       "description": "Timeless blue jeans for a classic and versatile look",
-      "category": 2,
-      "is_active": true,
-      "created_at": "2023-10-04T16:50:30+03:00",
-      "updated_at": "2023-10-04T16:50:30+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-04 13:50:30.000000",
+      "updated_at": "2023-10-04 13:50:30.000000",
+      "category_id": 24
     }
   },
   {
     "model": "inventory.product",
-    "pk": 5,
+    "id": 5,
     "fields": {
       "web_id": "PROD005",
       "slug": "slim-fit-jeans",
       "name": "Slim Fit Jeans",
       "description": "Modern and stylish slim fit denim jeans for a trendy look",
-      "category": 2,
-      "is_active": true,
-      "created_at": "2023-10-05T17:55:45+03:00",
-      "updated_at": "2023-10-05T17:55:45+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-05 14:55:45.000000",
+      "updated_at": "2023-10-05 14:55:45.000000",
+      "category_id": 24
     }
   },
   {
     "model": "inventory.product",
-    "pk": 6,
+    "id": 6,
     "fields": {
       "web_id": "PROD006",
       "slug": "distressed-boyfriend-jeans",
       "name": "Distressed Boyfriend Jeans",
       "description": "Casual and comfortable distressed jeans for a laid-back style",
-      "category": 2,
-      "is_active": true,
-      "created_at": "2023-10-06T18:45:20+03:00",
-      "updated_at": "2023-10-06T18:45:20+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-06 15:45:20.000000",
+      "updated_at": "2023-10-06 15:45:20.000000",
+      "category_id": 24
     }
   },
   {
     "model": "inventory.product",
-    "pk": 7,
+    "id": 7,
     "fields": {
       "web_id": "PROD007",
       "slug": "elegant-evening-dress",
       "name": "Elegant Evening Dress",
       "description": "A sophisticated evening dress for special occasions",
-      "category": 3,
-      "is_active": true,
-      "created_at": "2023-10-07T19:30:10+03:00",
-      "updated_at": "2023-10-07T19:30:10+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-07 16:30:10.000000",
+      "updated_at": "2023-10-07 16:30:10.000000",
+      "category_id": 25
     }
   },
   {
     "model": "inventory.product",
-    "pk": 8,
+    "id": 8,
     "fields": {
       "web_id": "PROD008",
       "slug": "floral-summer-dress",
       "name": "Floral Summer Dress",
       "description": "A breezy and stylish floral dress perfect for summer",
-      "category": 3,
-      "is_active": true,
-      "created_at": "2023-10-08T20:15:25+03:00",
-      "updated_at": "2023-10-08T20:15:25+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-08 17:15:25.000000",
+      "updated_at": "2023-10-08 17:15:25.000000",
+      "category_id": 25
     }
   },
   {
     "model": "inventory.product",
-    "pk": 9,
+    "id": 9,
     "fields": {
       "web_id": "PROD009",
       "slug": "casual-day-dress",
       "name": "Casual Day Dress",
       "description": "A comfortable and casual dress for everyday wear",
-      "category": 3,
-      "is_active": true,
-      "created_at": "2023-10-09T21:05:40+03:00",
-      "updated_at": "2023-10-09T21:05:40+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-09 18:05:40.000000",
+      "updated_at": "2023-10-09 18:05:40.000000",
+      "category_id": 25
     }
   },
   {
     "model": "inventory.product",
-    "pk": 10,
+    "id": 10,
     "fields": {
       "web_id": "PROD010",
       "slug": "cozy-knit-sweater",
       "name": "Cozy Knit Sweater",
       "description": "A warm and cozy knit sweater for chilly days",
-      "category": 4,
-      "is_active": true,
-      "created_at": "2023-10-10T22:20:15+03:00",
-      "updated_at": "2023-10-10T22:20:15+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-10 19:20:15.000000",
+      "updated_at": "2023-10-10 19:20:15.000000",
+      "category_id": 26
     }
   },
   {
     "model": "inventory.product",
-    "pk": 11,
+    "id": 11,
     "fields": {
       "web_id": "PROD011",
       "slug": "v-neck-sweater",
       "name": "V-Neck Sweater",
       "description": "A classic V-neck sweater for a timeless and elegant look",
-      "category": 4,
-      "is_active": true,
-      "created_at": "2023-10-11T23:10:30+03:00",
-      "updated_at": "2023-10-11T23:10:30+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-11 20:10:30.000000",
+      "updated_at": "2023-10-11 20:10:30.000000",
+      "category_id": 26
     }
   },
   {
     "model": "inventory.product",
-    "pk": 12,
+    "id": 12,
     "fields": {
       "web_id": "PROD012",
       "slug": "chunky-cable-sweater",
       "name": "Chunky Cable Sweater",
       "description": "A stylish and chunky cable knit sweater for a trendy look",
-      "category": 4,
-      "is_active": true,
-      "created_at": "2023-10-12T00:05:50+03:00",
-      "updated_at": "2023-10-12T00:05:50+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-11 21:05:50.000000",
+      "updated_at": "2023-10-11 21:05:50.000000",
+      "category_id": 26
     }
   },
   {
     "model": "inventory.product",
-    "pk": 13,
+    "id": 13,
     "fields": {
       "web_id": "PROD013",
       "slug": "leather-biker-jacket",
       "name": "Leather Biker Jacket",
       "description": "A classic leather biker jacket for a bold and edgy style",
-      "category": 5,
-      "is_active": true,
-      "created_at": "2023-10-13T01:15:40+03:00",
-      "updated_at": "2023-10-13T01:15:40+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-12 22:15:40.000000",
+      "updated_at": "2023-10-12 22:15:40.000000",
+      "category_id": 27
     }
   },
   {
     "model": "inventory.product",
-    "pk": 14,
+    "id": 14,
     "fields": {
       "web_id": "PROD014",
       "slug": "hooded-parka",
       "name": "Hooded Parka",
       "description": "A versatile and practical hooded parka for all seasons",
-      "category": 5,
-      "is_active": true,
-      "created_at": "2023-10-14T02:30:25+03:00",
-      "updated_at": "2023-10-14T02:30:25+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-13 23:30:25.000000",
+      "updated_at": "2023-10-13 23:30:25.000000",
+      "category_id": 27
     }
   },
   {
     "model": "inventory.product",
-    "pk": 15,
+    "id": 15,
     "fields": {
       "web_id": "PROD015",
       "slug": "quilted-bomber-jacket",
       "name": "Quilted Bomber Jacket",
       "description": "A stylish quilted bomber jacket for a trendy and casual look",
-      "category": 5,
-      "is_active": true,
-      "created_at": "2023-10-15T03:40:10+03:00",
-      "updated_at": "2023-10-15T03:40:10+03:00"
+      "is_active": 1,
+      "created_at": "2023-10-15 00:40:10.000000",
+      "updated_at": "2023-10-15 00:40:10.000000",
+      "category_id": 27
     }
   }
 ]

@@ -1,0 +1,36 @@
+[
+  {
+    "model": "inventory.costumer",
+    "id": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$St95olxoIF688GyzdWWGGz$DPR+JeNkzDRP8MDSN2Q70n0dDtY/S5PMQRVRK8HlVKk=",
+      "last_login": "2023-10-28 14:32:55.651911",
+      "is_superuser": 1,
+      "username": "Giorgi",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": 1,
+      "is_active": 1,
+      "date_joined": "2023-10-28 14:32:12.317159",
+      "name": "",
+      "email": "admin@gmail.com"
+    }
+  },
+  {
+    "model": "inventory.costumer",
+    "id": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$W9LpCYtPjRmCxD4X0rQ04K$BgGufzA6ZkDtJQusU/mqFpdIpmNvam/pu6ghOhRs90I=",
+      "last_login": "2023-12-05 16:06:09.490184",
+      "is_superuser": 1,
+      "username": "stopa",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": 1,
+      "is_active": 1,
+      "date_joined": "2023-11-02 11:19:03.903122",
+      "name": "",
+      "email": "giorgi1@gmail.com"
+    }
+  }
+]

@@ -80,7 +80,7 @@ REST_FRAMEWORK = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://127.0.0.1:6379/1',  # Adjust this URL as needed
+        'LOCATION': 'redis://redis-server:6379/1',  # Adjust this URL as needed
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
@@ -120,12 +120,12 @@ DATABASES = {
         'NAME': 'myday',
         'USER': 'root',
         'PASSWORD': 'chemirutpaswordi',
-        'HOST': '127.0.0.1',
-        'PORT': 3306
+        'HOST': "mysql-db",
+        'PORT': 3306  
     }
+}
 
     # "default": dj_database_url.parse("postgres://mydayecommercedatabase_user:Qb3shtU6ErWIZnuctLKQlAtvBYvt4z77@dpg-clnjrhhll56s73fjbhb0-a.frankfurt-postgres.render.com/mydayecommercedatabase")
-}
 
 # DATABASES = {
 #     'default': {
@@ -190,7 +190,7 @@ CHANNEL_LAYERS = {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
             # The URL scheme to use for the Redis connection (defaults to redis://)
-            "hosts": [("localhost", 6379)],
+            "hosts": [("redis-server", 6379)],
         },
     },
 }

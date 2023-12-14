@@ -1,0 +1,42 @@
+[
+  {
+    "model": "inventory.productattributevalue",
+    "fields": { "id": 1, "product_attribute_id": 1, "attribute_value": "Red" }
+  },
+  {
+    "model": "inventory.productattributevalue",
+    "fields": { "id": 2, "product_attribute_id": 1, "attribute_value": "Blue" }
+  },
+  {
+    "model": "inventory.productattributevalue",
+    "fields": { "id": 3, "product_attribute_id": 1, "attribute_value": "Green" }
+  },
+  {
+    "model": "inventory.productattributevalue",
+    "fields": { "id": 4, "product_attribute_id": 2, "attribute_value": "Small" }
+  },
+  {
+    "model": "inventory.productattributevalue",
+    "fields": {
+      "id": 5,
+      "product_attribute_id": 2,
+      "attribute_value": "Medium"
+    }
+  },
+  {
+    "model": "inventory.productattributevalue",
+    "fields": { "id": 6, "product_attribute_id": 2, "attribute_value": "Large" }
+  },
+  {
+    "model": "inventory.productattributevalue",
+    "fields": {
+      "id": 7,
+      "product_attribute_id": 3,
+      "attribute_value": "Cotton"
+    }
+  },
+  {
+    "model": "inventory.productattributevalue",
+    "fields": { "id": 8, "product_attribute_id": 3, "attribute_value": "Denim" }
+  }
+]
