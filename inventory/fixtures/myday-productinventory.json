@@ -2,9 +2,9 @@
   {
     "model": "inventory.productinventory",
     "fields": {
+      "sku": "SKU001",
       "id": 1,
 
-      "sku": "SKU001",
       "upc": "UPC001",
       "is_active": 1,
       "is_default": 1,
@@ -14,16 +14,16 @@
       "created_at": "2023-10-01 10:20:30.000000",
       "updated_at": "2023-10-01 10:20:30.000000",
       "brand_id": 1,
-      "product_id": 16,
+      "product_id": 1,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
     "fields": {
+      "sku": "SKU002",
       "id": 2,
 
-      "sku": "SKU002",
       "upc": "UPC002",
       "is_active": 1,
       "is_default": 0,
@@ -33,16 +33,16 @@
       "created_at": "2023-10-01 10:20:30.000000",
       "updated_at": "2023-10-01 10:20:30.000000",
       "brand_id": 1,
-      "product_id": 16,
+      "product_id": 1,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
     "fields": {
+      "sku": "SKU003",
       "id": 3,
 
-      "sku": "SKU003",
       "upc": "UPC003",
       "is_active": 1,
       "is_default": 0,
@@ -52,16 +52,16 @@
       "created_at": "2023-10-01 10:20:30.000000",
       "updated_at": "2023-10-01 10:20:30.000000",
       "brand_id": 1,
-      "product_id": 16,
+      "product_id": 1,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
     "fields": {
+      "sku": "SKU004",
       "id": 4,
 
-      "sku": "SKU004",
       "upc": "UPC004",
       "is_active": 1,
       "is_default": 1,
@@ -71,16 +71,16 @@
       "created_at": "2023-10-02 11:30:45.000000",
       "updated_at": "2023-10-02 11:30:45.000000",
       "brand_id": 1,
-      "product_id": 17,
+      "product_id": 2,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
     "fields": {
+      "sku": "SKU005",
       "id": 5,
 
-      "sku": "SKU005",
       "upc": "UPC005",
       "is_active": 1,
       "is_default": 0,
@@ -90,16 +90,16 @@
       "created_at": "2023-10-02 11:30:45.000000",
       "updated_at": "2023-10-02 11:30:45.000000",
       "brand_id": 1,
-      "product_id": 17,
+      "product_id": 2,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
     "fields": {
+      "sku": "SKU006",
       "id": 6,
 
-      "sku": "SKU006",
       "upc": "UPC006",
       "is_active": 1,
       "is_default": 0,
@@ -109,16 +109,16 @@
       "created_at": "2023-10-02 11:30:45.000000",
       "updated_at": "2023-10-02 11:30:45.000000",
       "brand_id": 1,
-      "product_id": 17,
+      "product_id": 2,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
     "fields": {
+      "sku": "SKU007",
       "id": 7,
 
-      "sku": "SKU007",
       "upc": "UPC007",
       "is_active": 1,
       "is_default": 1,
@@ -128,16 +128,16 @@
       "created_at": "2023-10-03 12:40:15.000000",
       "updated_at": "2023-10-03 12:40:15.000000",
       "brand_id": 1,
-      "product_id": 18,
+      "product_id": 3,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
     "fields": {
+      "sku": "SKU008",
       "id": 8,
 
-      "sku": "SKU008",
       "upc": "UPC008",
       "is_active": 1,
       "is_default": 0,
@@ -147,16 +147,16 @@
       "created_at": "2023-10-03 12:40:15.000000",
       "updated_at": "2023-10-03 12:40:15.000000",
       "brand_id": 1,
-      "product_id": 18,
+      "product_id": 3,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
     "fields": {
+      "sku": "SKU009",
       "id": 9,
 
-      "sku": "SKU009",
       "upc": "UPC009",
       "is_active": 1,
       "is_default": 0,
@@ -166,13 +166,12 @@
       "created_at": "2023-10-03 12:40:15.000000",
       "updated_at": "2023-10-03 12:40:15.000000",
       "brand_id": 1,
-      "product_id": 18,
+      "product_id": 3,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 10,
       "sku": "SKU010",
@@ -185,13 +184,12 @@
       "created_at": "2023-10-04 13:50:30.000000",
       "updated_at": "2023-11-13 19:19:56.386277",
       "brand_id": 1,
-      "product_id": 19,
+      "product_id": 4,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 11,
       "sku": "SKU011",
@@ -204,13 +202,12 @@
       "created_at": "2023-10-04 13:50:30.000000",
       "updated_at": "2023-11-13 19:20:02.345338",
       "brand_id": 1,
-      "product_id": 19,
+      "product_id": 4,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 12,
       "sku": "SKU012",
@@ -223,13 +220,12 @@
       "created_at": "2023-10-04 13:50:30.000000",
       "updated_at": "2023-11-13 19:20:11.215173",
       "brand_id": 1,
-      "product_id": 19,
+      "product_id": 4,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 13,
       "sku": "SKU013",
@@ -242,13 +238,12 @@
       "created_at": "2023-10-05 14:55:45.000000",
       "updated_at": "2023-11-13 19:21:21.392999",
       "brand_id": 1,
-      "product_id": 20,
+      "product_id": 5,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 14,
       "sku": "SKU014",
@@ -261,13 +256,12 @@
       "created_at": "2023-10-05 14:55:45.000000",
       "updated_at": "2023-11-13 19:21:25.599006",
       "brand_id": 1,
-      "product_id": 20,
+      "product_id": 5,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 15,
       "sku": "SKU015",
@@ -280,13 +274,12 @@
       "created_at": "2023-10-05 14:55:45.000000",
       "updated_at": "2023-11-13 19:21:30.348580",
       "brand_id": 1,
-      "product_id": 20,
+      "product_id": 5,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 16,
       "sku": "SKU016",
@@ -299,13 +292,12 @@
       "created_at": "2023-10-06 15:45:20.000000",
       "updated_at": "2023-11-13 19:24:20.576647",
       "brand_id": 1,
-      "product_id": 21,
+      "product_id": 6,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 17,
       "sku": "SKU017",
@@ -318,13 +310,12 @@
       "created_at": "2023-10-06 15:45:20.000000",
       "updated_at": "2023-11-13 19:24:27.575860",
       "brand_id": 1,
-      "product_id": 21,
+      "product_id": 6,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 18,
       "sku": "SKU018",
@@ -337,13 +328,12 @@
       "created_at": "2023-10-06 15:45:20.000000",
       "updated_at": "2023-11-13 19:24:34.748301",
       "brand_id": 1,
-      "product_id": 21,
+      "product_id": 6,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 19,
       "sku": "SKU019",
@@ -356,13 +346,12 @@
       "created_at": "2023-10-07 16:30:10.000000",
       "updated_at": "2023-10-07 16:30:10.000000",
       "brand_id": 1,
-      "product_id": 22,
+      "product_id": 7,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 20,
       "sku": "SKU020",
@@ -375,13 +364,12 @@
       "created_at": "2023-10-07 16:30:10.000000",
       "updated_at": "2023-10-07 16:30:10.000000",
       "brand_id": 1,
-      "product_id": 22,
+      "product_id": 7,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 21,
       "sku": "SKU021",
@@ -394,13 +382,12 @@
       "created_at": "2023-10-07 16:30:10.000000",
       "updated_at": "2023-10-07 16:30:10.000000",
       "brand_id": 1,
-      "product_id": 22,
+      "product_id": 7,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 22,
       "sku": "SKU022",
@@ -413,13 +400,12 @@
       "created_at": "2023-10-08 17:15:25.000000",
       "updated_at": "2023-11-13 19:27:39.829807",
       "brand_id": 1,
-      "product_id": 23,
+      "product_id": 8,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 23,
       "sku": "SKU023",
@@ -432,13 +418,12 @@
       "created_at": "2023-10-08 17:15:25.000000",
       "updated_at": "2023-11-13 19:28:41.291102",
       "brand_id": 1,
-      "product_id": 23,
+      "product_id": 8,
       "product_type_id": 3
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 24,
       "sku": "SKU024",
@@ -451,13 +436,12 @@
       "created_at": "2023-10-08 17:15:25.000000",
       "updated_at": "2023-11-13 19:27:50.077957",
       "brand_id": 1,
-      "product_id": 23,
+      "product_id": 8,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 25,
       "sku": "SKU025",
@@ -470,13 +454,12 @@
       "created_at": "2023-10-09 18:05:40.000000",
       "updated_at": "2023-11-13 19:28:33.392483",
       "brand_id": 1,
-      "product_id": 24,
+      "product_id": 9,
       "product_type_id": 3
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 26,
       "sku": "SKU026",
@@ -489,13 +472,12 @@
       "created_at": "2023-10-09 18:05:40.000000",
       "updated_at": "2023-10-09 18:05:40.000000",
       "brand_id": 1,
-      "product_id": 24,
+      "product_id": 9,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 27,
       "sku": "SKU027",
@@ -508,13 +490,12 @@
       "created_at": "2023-10-09 18:05:40.000000",
       "updated_at": "2023-10-09 18:05:40.000000",
       "brand_id": 1,
-      "product_id": 24,
+      "product_id": 9,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 28,
       "sku": "SKU028",
@@ -527,13 +508,12 @@
       "created_at": "2023-10-10 19:20:15.000000",
       "updated_at": "2023-11-13 19:32:22.402022",
       "brand_id": 1,
-      "product_id": 25,
+      "product_id": 10,
       "product_type_id": 4
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 29,
       "sku": "SKU029",
@@ -546,13 +526,12 @@
       "created_at": "2023-10-10 19:20:15.000000",
       "updated_at": "2023-10-10 19:20:15.000000",
       "brand_id": 1,
-      "product_id": 25,
+      "product_id": 10,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 30,
       "sku": "SKU030",
@@ -565,13 +544,12 @@
       "created_at": "2023-10-10 19:20:15.000000",
       "updated_at": "2023-10-10 19:20:15.000000",
       "brand_id": 1,
-      "product_id": 25,
+      "product_id": 10,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 31,
       "sku": "SKU031",
@@ -584,13 +562,12 @@
       "created_at": "2023-10-11 20:10:30.000000",
       "updated_at": "2023-11-13 19:35:05.272794",
       "brand_id": 1,
-      "product_id": 26,
+      "product_id": 11,
       "product_type_id": 4
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 32,
       "sku": "SKU032",
@@ -603,13 +580,12 @@
       "created_at": "2023-10-11 20:10:30.000000",
       "updated_at": "2023-10-11 20:10:30.000000",
       "brand_id": 1,
-      "product_id": 26,
+      "product_id": 11,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 33,
       "sku": "SKU033",
@@ -622,13 +598,12 @@
       "created_at": "2023-10-11 20:10:30.000000",
       "updated_at": "2023-10-11 20:10:30.000000",
       "brand_id": 1,
-      "product_id": 26,
+      "product_id": 11,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 34,
       "sku": "SKU034",
@@ -641,13 +616,12 @@
       "created_at": "2023-10-11 21:05:50.000000",
       "updated_at": "2023-11-13 19:37:12.319207",
       "brand_id": 1,
-      "product_id": 27,
+      "product_id": 12,
       "product_type_id": 4
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 35,
       "sku": "SKU035",
@@ -660,13 +634,12 @@
       "created_at": "2023-10-11 21:05:50.000000",
       "updated_at": "2023-11-13 19:37:42.222982",
       "brand_id": 1,
-      "product_id": 27,
+      "product_id": 12,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 36,
       "sku": "SKU036",
@@ -679,13 +652,12 @@
       "created_at": "2023-10-11 21:05:50.000000",
       "updated_at": "2023-11-13 19:37:49.366449",
       "brand_id": 1,
-      "product_id": 27,
+      "product_id": 12,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 37,
       "sku": "SKU037",
@@ -698,13 +670,12 @@
       "created_at": "2023-10-12 22:15:40.000000",
       "updated_at": "2023-11-13 19:38:38.283112",
       "brand_id": 1,
-      "product_id": 28,
+      "product_id": 13,
       "product_type_id": 5
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 38,
       "sku": "SKU038",
@@ -717,13 +688,12 @@
       "created_at": "2023-10-12 22:15:40.000000",
       "updated_at": "2023-10-12 22:15:40.000000",
       "brand_id": 1,
-      "product_id": 28,
+      "product_id": 13,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 39,
       "sku": "SKU039",
@@ -736,13 +706,12 @@
       "created_at": "2023-10-12 22:15:40.000000",
       "updated_at": "2023-11-13 19:39:26.965837",
       "brand_id": 1,
-      "product_id": 28,
+      "product_id": 13,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 40,
       "sku": "SKU040",
@@ -755,13 +724,12 @@
       "created_at": "2023-10-13 23:30:25.000000",
       "updated_at": "2023-11-13 19:40:51.859739",
       "brand_id": 1,
-      "product_id": 29,
+      "product_id": 14,
       "product_type_id": 5
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 41,
       "sku": "SKU041",
@@ -774,13 +742,12 @@
       "created_at": "2023-10-13 23:30:25.000000",
       "updated_at": "2023-11-13 19:40:58.001251",
       "brand_id": 1,
-      "product_id": 29,
+      "product_id": 14,
       "product_type_id": 5
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 42,
       "sku": "SKU042",
@@ -793,13 +760,12 @@
       "created_at": "2023-10-13 23:30:25.000000",
       "updated_at": "2023-11-13 19:41:01.220759",
       "brand_id": 1,
-      "product_id": 29,
+      "product_id": 14,
       "product_type_id": 1
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 43,
       "sku": "SKU043",
@@ -812,13 +778,12 @@
       "created_at": "2023-10-15 00:40:10.000000",
       "updated_at": "2023-11-13 19:42:26.624582",
       "brand_id": 1,
-      "product_id": 30,
+      "product_id": 15,
       "product_type_id": 5
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 44,
       "sku": "SKU044",
@@ -831,13 +796,12 @@
       "created_at": "2023-10-15 00:40:10.000000",
       "updated_at": "2023-11-13 19:42:32.177483",
       "brand_id": 1,
-      "product_id": 30,
+      "product_id": 15,
       "product_type_id": 5
     }
   },
   {
     "model": "inventory.productinventory",
-
     "fields": {
       "id": 45,
       "sku": "SKU045",
@@ -850,7 +814,7 @@
       "created_at": "2023-10-15 00:40:10.000000",
       "updated_at": "2023-10-15 00:40:10.000000",
       "brand_id": 1,
-      "product_id": 30,
+      "product_id": 15,
       "product_type_id": 1
     }
   }

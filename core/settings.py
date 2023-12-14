@@ -1,5 +1,5 @@
 from pathlib import Path
-# import dj_database_url
+import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-k@$fehltpvt(zmf)5q(l*m7u&p!9(!0mn7zhu%a%2i=h1y_-lm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://mydayecommercewebsite.onrender.com", "localhost"]
 
 import pymysql
 pymysql.version_info = (1, 4, 6, 'final', 0)  # (major, minor, micro, releaselevel, serial)
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "channels",
 
     #Development
-    "debug_toolbar",
+    # "debug_toolbar",
 ]
 
 AUTH_USER_MODEL = 'inventory.Costumer'
@@ -69,7 +69,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 
     #debug-toolbar
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    # "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 REST_FRAMEWORK = {
@@ -80,7 +80,7 @@ REST_FRAMEWORK = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://redis-server:6379/1',  # Adjust this URL as needed
+        'LOCATION': 'redis://redis://red-cltjhl8cmk4c738t52tg:6379/1',  # Adjust this URL as needed
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
@@ -125,7 +125,8 @@ DATABASES = {
     }
 }
 
-    # "default": dj_database_url.parse("postgres://mydayecommercedatabase_user:Qb3shtU6ErWIZnuctLKQlAtvBYvt4z77@dpg-clnjrhhll56s73fjbhb0-a.frankfurt-postgres.render.com/mydayecommercedatabase")
+DATABASES["default"] = dj_database_url.parse("postgres://mydayecommercedatabase_user:Qb3shtU6ErWIZnuctLKQlAtvBYvt4z77@dpg-clnjrhhll56s73fjbhb0-a.frankfurt-postgres.render.com/mydayecommercedatabase")
+
 
 # DATABASES = {
 #     'default': {
@@ -181,16 +182,16 @@ MEDIA_URL = 'images/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
+# INTERNAL_IPS = [
+#     "127.0.0.1",
+# ]
 
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
             # The URL scheme to use for the Redis connection (defaults to redis://)
-            "hosts": [("redis-server", 6379)],
+            "hosts": ["redis://red-cltjhl8cmk4c738t52tg:6379"],
         },
     },
 }

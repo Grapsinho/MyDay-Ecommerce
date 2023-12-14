@@ -80,7 +80,7 @@
       "rght": 8,
       "tree_id": 3,
       "level": 0,
-      "parent_id": 0
+      "parent_id": null
     }
   },
   {
@@ -94,7 +94,7 @@
       "rght": 6,
       "tree_id": 2,
       "level": 0,
-      "parent_id": 0
+      "parent_id": null
     }
   }
 ]
