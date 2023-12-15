@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-k@$fehltpvt(zmf)5q(l*m7u&p!9(!0mn7zhu%a%2i=h1y_-lm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://mydayecommercewebsite.onrender.com", "localhost"]
+ALLOWED_HOSTS = ["mydayecommerce.onrender.com", "localhost"]
 
 import pymysql
 pymysql.version_info = (1, 4, 6, 'final', 0)  # (major, minor, micro, releaselevel, serial)
@@ -80,7 +80,7 @@ REST_FRAMEWORK = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://redis://red-cltjhl8cmk4c738t52tg:6379/1',  # Adjust this URL as needed
+        'LOCATION': 'oregon-redis.render.com:6379/1',  # Adjust this URL as needed
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
@@ -177,21 +177,26 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = BASE_DIR / 'static/images'
 MEDIA_URL = 'images/'
 
+STATIC_ROOT = "staticFiles"
+
+from mainApp import storage_config
+
+STATICFILES_STORAGE = storage_config.STORAGES['StaticFilesStorage']['BACKEND']
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # INTERNAL_IPS = [
-#     "127.0.0.1",
+#     "localhost",
 # ]
 
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            # The URL scheme to use for the Redis connection (defaults to redis://)
-            "hosts": ["redis://red-cltjhl8cmk4c738t52tg:6379"],
+            "hosts": [("oregon-redis.render.com", 6379)],
         },
     },
 }
