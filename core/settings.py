@@ -1,5 +1,5 @@
 from pathlib import Path
-import dj_database_url
+# import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -80,7 +80,7 @@ REST_FRAMEWORK = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'oregon-redis.render.com:6379/1',  # Adjust this URL as needed
+        'LOCATION': 'localhost:6379/1',  # Adjust this URL as needed
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
@@ -125,7 +125,7 @@ DATABASES = {
     }
 }
 
-DATABASES["default"] = dj_database_url.parse("postgres://mydayecommercedatabase_user:Qb3shtU6ErWIZnuctLKQlAtvBYvt4z77@dpg-clnjrhhll56s73fjbhb0-a.frankfurt-postgres.render.com/mydayecommercedatabase")
+# DATABASES["default"] = dj_database_url.parse("postgres://mydayecommercedatabase_user:Qb3shtU6ErWIZnuctLKQlAtvBYvt4z77@dpg-clnjrhhll56s73fjbhb0-a.frankfurt-postgres.render.com/mydayecommercedatabase")
 
 
 # DATABASES = {
@@ -179,9 +179,9 @@ MEDIA_URL = 'images/'
 
 STATIC_ROOT = "staticFiles"
 
-from mainApp import storage_config
+# from mainApp import storage_config
 
-STATICFILES_STORAGE = storage_config.STORAGES['StaticFilesStorage']['BACKEND']
+# STATICFILES_STORAGE = storage_config.STORAGES['StaticFilesStorage']['BACKEND']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -196,7 +196,7 @@ CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [("oregon-redis.render.com", 6379)],
+            "hosts": [("localhost", 6379)],
         },
     },
 }
