@@ -80,7 +80,7 @@ REST_FRAMEWORK = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'localhost:6379/1',  # Adjust this URL as needed
+        'LOCATION': 'redis://localhost:6379/1',  # Adjust this URL as needed
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
@@ -120,7 +120,7 @@ DATABASES = {
         'NAME': 'myday',
         'USER': 'root',
         'PASSWORD': 'chemirutpaswordi',
-        'HOST': "mysql-db",
+        'HOST': "localhost",
         'PORT': 3306  
     }
 }
