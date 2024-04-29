@@ -47,8 +47,8 @@ def collections(request, slug):
 
     # Now, reorganized_data contains the attributes and their corresponding values grouped together.
     # You can access them like this:
-    for attribute, values in reorganized_data.items():
-        print(f"{attribute}:")
+    # for attribute, values in reorganized_data.items():
+    #     print(f"{attribute}:")
 
     cat = Category.objects.all()
 
